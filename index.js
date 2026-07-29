@@ -1,7 +1,9 @@
-function greet() {
-    return "Hello CI/CD!";
-}
+const express = require("express");
 
-console.log(greet());
+const app = express();
 
-module.exports = greet;
+app.get("/", (req, res) => {
+  res.send("Hello CI/CD Application is Running!");
+});
+
+module.exports = app;
