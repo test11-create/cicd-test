@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello CI/CD Application is Running!");
+  res.send("Hello CI/CD Application is Running successfully!");
 });
 
 module.exports = app;
